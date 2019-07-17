@@ -1,0 +1,20 @@
+
+ <div class="listRecipe">
+  <table mat-table [dataSource]="listRecipe" *ngIf="listRecipe && listRecipe.length > 0">
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> Name of the recipe </th>
+      <td class="listtd" mat-cell *matCellDef="let element">
+        <img *ngIf="element.thumbnail" src="{{element.thumbnail}}" />
+        <div>
+          <h4>{{element.title}} <a href="{{element.href}}" target="_blank"><mat-icon class="icon" matTooltip="View recipe">visibility</mat-icon></a></h4>
+          <p>{{element.ingredients}}</p>
+        </div>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <p *ngIf="listRecipe && listRecipe.length === 0">
+      No hay facturas para mostrar.
+  </p>
+</div>

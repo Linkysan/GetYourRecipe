@@ -1,0 +1,32 @@
+//Colors
+$white: #fff;
+$turquoise: rgb(44, 241, 222);
+$darkTurquoise: rgb(9, 139, 126);
+$color-alert: #ef5350;
+
+
+
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Extra small screen
+$screen-xs:                  480px !default;
+
+// Small screen
+$screen-sm:                  768px !default;
+
+// Medium screen
+$screen-md:                  992px !default;
+
+// Large screen
+$screen-lg:                  1200px !default;
+
+// wide screen
+$screen-wide:                  1550px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm - 1) !default;
+$screen-sm-max:              ($screen-md - 1) !default;
+$screen-md-max:              ($screen-lg - 1) !default;
+$screen-lg-max:              ($screen-wide - 1) !default;

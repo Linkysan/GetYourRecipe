@@ -1,0 +1,15 @@
+
+@import '../../../assets/sass/mixins';
+@import '../../../assets/sass/variables';
+
+.header {
+  .icon {
+    @include icon-light;
+    padding: 0 14px;
+    cursor: pointer;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+}

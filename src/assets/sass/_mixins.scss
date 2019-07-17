@@ -1,0 +1,13 @@
+@import "./flexBox";
+
+@mixin icon-light {
+    color: $white;
+}
+
+@mixin icon-dark {
+    color: $darkTurquoise;
+}
+
+@mixin alerta {
+    color: $color-alert!important;
+}
